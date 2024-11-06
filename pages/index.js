@@ -2,7 +2,9 @@ import Head from 'next/head';
 import { FeaturedPosts } from '../components/home-page/fetured-posts';
 
 import { getFeaturedPosts } from '../lib/post-util';
-import { Hero } from '../components/home-page/Herссмисимo';
+import { Hero } from '../components/home-page/main-hero';
+
+
 
 const HomePage = props => {
 	const { posts } = props;
