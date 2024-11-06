@@ -3,6 +3,10 @@ import { PostContent } from '../../components/posts/post-detail/post-content';
 import { getPostData, getPostsFiles } from '../../lib/post-util';
 
 const PostDetailPage = props => {
+	if (!props.post) {
+    return <p>Post not found.</p>;
+  }
+	
 	return (
 		<>
 			<Head>
